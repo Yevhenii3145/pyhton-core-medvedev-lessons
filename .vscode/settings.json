@@ -1,0 +1,8 @@
+{
+  "python.linting.pylintEnabled": false,
+  "python.linting.enabled": true,
+  "editor.parameterHints.cycle": true,
+  "editor.parameterHints.enabled": false,
+  "python.linting.flake8Enabled": true,
+  "editor.formatOnSave": true
+}
