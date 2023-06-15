@@ -15,3 +15,17 @@ a[0] = 99
 print(b)  # [3, 4, [99, 2]]
 b.append("hello")
 print(b)
+
+my_list = ["a", "b", "c", "d", "e", "f"]
+
+for i in range(len(my_list)):
+    print(f'{i}-{my_list[i]}')  # 1-b 2-c 3-d 4-e 5-f
+
+for index, element in enumerate(my_list):
+    print(index, element)  # 0 a 1 b 2 c 3 d 4 e 5 f
+
+for i in reversed(my_list):
+    print(i)  # f e d c b a
+
+for i in sorted(my_list):
+    print(i)  # a b c d e f

@@ -18,7 +18,7 @@ from copy import deepcopy
     list.sort(key=func)
 
     sorted(list)
-"""
+    """
 
 a = [1, 2, 3]
 a.clear()
