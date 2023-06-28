@@ -12,4 +12,4 @@ print(my_path.is_file())
 my_path = Path("C:\\Users\\Admin\\Desktop\\")
 
 for i in my_path.iterdir():
-    print(i)
+    print("i", i)
