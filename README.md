@@ -1,1 +1,0 @@
-# pyhton-core-medvedev-lessons

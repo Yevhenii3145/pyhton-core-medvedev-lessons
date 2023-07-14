@@ -1,0 +1,3 @@
+[console_scripts]
+another-application = package_crab_123_gg.test:func
+my-application = package_crab_123_gg:hello_world
