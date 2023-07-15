@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+package_crab_124_gg_name.egg-info/PKG-INFO
+package_crab_124_gg_name.egg-info/SOURCES.txt
+package_crab_124_gg_name.egg-info/dependency_links.txt
+package_crab_124_gg_name.egg-info/entry_points.txt
+package_crab_124_gg_name.egg-info/top_level.txt
+src/package_crab_123_gg/__init__.py
+src/package_crab_123_gg/test.py

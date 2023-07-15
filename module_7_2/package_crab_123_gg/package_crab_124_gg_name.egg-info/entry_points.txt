@@ -1,0 +1,2 @@
+[console_scripts]
+package_crab_123 = src.package_crab_123_gg:hello_world
