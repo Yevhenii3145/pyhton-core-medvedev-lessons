@@ -40,9 +40,10 @@ need_to_load = input("Do you want to load the game? (y/n): ")
 
 if need_to_load.casefold() == "y":
     objects, SIZE_M, SIZE_N, turns = load()
+
 else:
-    SIZE_N = randint(10, 15)
-    SIZE_M = randint(10, 15)
+    SIZE_N = randint(20, 30)
+    SIZE_M = randint(20, 30)
     char = {"x": randint(0, SIZE_N - 1),
             "y": randint(0, SIZE_M - 1),
             "sign": "X",
@@ -52,7 +53,7 @@ else:
               "y": randint(0, SIZE_M - 1),
               "sign": "O",
               "type": "portal"}
-    enemies = generate_enemies(randint(5, 10))
+    enemies = generate_enemies(randint(10, 20))
 
     objects = [char, portal]
     objects.extend(enemies)
