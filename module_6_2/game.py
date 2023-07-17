@@ -2,7 +2,6 @@ from random import randint, choice
 
 
 def load():
-    # 14 14 X char
     objects = []
     with open(r"C:\Users\Admin\Desktop\python-core-medvedev-lessons\module_6_2\save.txt", "r") as file:
 
