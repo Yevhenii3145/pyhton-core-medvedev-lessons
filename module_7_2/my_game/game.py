@@ -7,6 +7,7 @@ from game128_engine249045.tools import load, save
 
 
 def generate_enemies(count):
+
     enemies = []
     for _ in range(count):
         enemy = {"x": randint(0, SIZE_N - 1),
