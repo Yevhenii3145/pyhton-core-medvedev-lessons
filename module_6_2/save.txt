@@ -1,14 +1,23 @@
-26 20
-31
-25 5 X char
-25 5 O portal
-10 15 E enemy
-24 11 E enemy
-16 2 E enemy
-19 18 E enemy
-12 19 E enemy
-1 19 E enemy
-9 9 E enemy
-1 10 E enemy
-22 1 E enemy
-1 7 E enemy
+24 30
+1
+9 12 X char
+20 1 O portal
+8 18 E enemy
+10 21 E enemy
+20 29 E enemy
+17 9 E enemy
+5 11 E enemy
+16 7 E enemy
+10 1 E enemy
+12 6 E enemy
+3 9 E enemy
+19 29 E enemy
+19 28 E enemy
+17 13 E enemy
+13 9 E enemy
+23 1 E enemy
+20 18 E enemy
+9 0 E enemy
+23 28 E enemy
+16 19 E enemy
+7 11 E enemy
