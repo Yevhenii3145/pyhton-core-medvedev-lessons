@@ -1,9 +1,7 @@
 from random import randint, choice
-
-# import game128_engine249045.map
-# import game128_engine249045.tools
-from game128_engine249045.map import generate_map, print_map
-from game128_engine249045.tools import load, save
+# pip install -i https://test.pypi.org/simple/ game-engine-new-generation
+from game_engine_new_generation.map import generate_map, print_map
+from game_engine_new_generation.tools import load, save
 
 
 def generate_enemies(count):

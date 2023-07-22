@@ -1,8 +1,8 @@
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name="game128_engine249045",
-    version="0.2.0",
+    name="game_engine_new_generation",
+    version="0.1.0",
     description="This is my game engine package",
     url="https://github.com/Yevhenii3145/python-core-medvedev-lessons",
     author='Eugen',
