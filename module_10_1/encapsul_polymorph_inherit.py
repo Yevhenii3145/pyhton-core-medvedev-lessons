@@ -29,6 +29,13 @@ class Character:
     def identify(self: object) -> None:
         print(self.name)
 
+    def damage_left(self):
+        # в зависимости от оружия в right_hand метод kick_ass() будет выдавать разный результат - это есть полиморфизм
+        self.left_hand.kick_ass()
+
+    def damage_right(self):
+        self.right_hand.kick_ass()
+
     def die(self):
         """gfdfghdfg"""
         drop_from_left, drop_from_right = self.left_hand, self.right_hand
@@ -43,6 +50,7 @@ class Weapon:
         self.damage = 10
 
     def kick_ass(self):
+        print("Chik-chik")
         return self.damage
 
 
@@ -53,7 +61,7 @@ class Knife(Weapon):
         self.damage = 5  # перезаписан (overwritten)
         self.weight = 12  # собственный (own)
 
-    # make_damage -унаследован (inherited)
+    # kick_ass -унаследован (inherited)
     def throw(self):
         return self.damage - 2
 
@@ -63,11 +71,28 @@ class Sword(Weapon):
     def __init__(self):
         self.damage = 15
 
+    def kick_ass(self):
+        print("Slash-slash")
+        return self.damage
+
 
 class Axe(Knife):
 
     def __init__(self):
         self.damage = 20
+
+    def kick_ass(self):
+        print("Herak")
+        return self.damage
+
+
+class Gun(Weapon):
+    def __init__(self):
+        self.damage = 20
+
+    def kick_ass(self):
+        print("Baaaam")
+        return self.damage
 
 
 knife = Knife()
@@ -75,3 +100,12 @@ sword = Sword()
 print(knife.kick_ass())  # 5
 print(sword.kick_ass())  # 15
 print(knife.throw())  # 3
+
+char = Character("char")
+sword = Sword()
+char.pick_weapon(sword)
+print(char.left_hand)  # <__main__.Sword object at 0x0000021A5A11FA00>
+print(char.right_hand)  # <__main__.Weapon object at 0x000001E79C6EF9D0>
+char.damage_left()  # Slash-slash
+char.damage_right()  # Chik-chik
+# абстрактные классы, интерфейсы, конракты, строгая типизация - это не соответствует философии python
